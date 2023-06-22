@@ -13,6 +13,7 @@ body{
 
 .sidebar{
     background-color: #cf0303;
+    border-right: 1px solid black;
     display: grid;
 
     grid-template-rows: 70px 300px 200px;
@@ -55,3 +56,75 @@ a{
     margin-top: 10px;
     background-color: #ff0000;;
 }
+
+.main{
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    background-color: #d1d5db;
+}
+
+.header{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    row-gap: 20px;
+    background-color: #cf0303;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 10px;
+    background-color: #ff0000;
+    padding: 5px 24px;
+}
+
+.bar{
+    display: grid;
+    grid-template-columns: minmax(200px,90%) 30px;
+    margin: 10px;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.bar input{
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgba(95, 2, 2, 0.5);
+    height: 23px;
+    color: antiquewhite;
+    padding: 4px;
+}
+
+.bar img{
+    width: 30px;
+    height: 30px;
+    align-self: center;
+}
+
+.acc{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    border: 0;
+    border-radius: 3px;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    padding: 5px;
+}
+
+.acc div{
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    font-weight: 700;
+}
+
+.acc div img{
+    width: 50px;
+    height: 50px;
+}
+
